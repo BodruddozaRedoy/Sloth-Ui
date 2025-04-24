@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 * {
   padding: 0;
@@ -6,12 +6,12 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
 }
 
-.navbar{
+.navbar {
   padding: 16px 112px;
   display: flex;
   align-items: center;
@@ -19,7 +19,7 @@ body{
   background-color: white;
 }
 
-.img-container{
+.img-container {
   /* width: 100%; */
 }
 
@@ -40,21 +40,110 @@ body{
   font-size: 16px;
 }
 
-.navbar button{
+.navbar button {
   padding: 12px 20px;
   border-radius: 1234px;
   font-weight: bold;
 }
 
-.signup-btn{
+.signup-btn {
   font-weight: bold;
   background-color: white;
-  border: 1px solid #CBD5E1;
+  border: 1px solid #cbd5e1;
   margin-right: 8px;
 }
 
-.login-btn{
-  background-color: #4F46E5;
+.login-btn {
+  background-color: #4f46e5;
   border: none;
   color: white;
+}
+
+.hero {
+  padding: 96px 112px;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background: linear-gradient(
+    165deg,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ecf6ff,
+    #c2ccff,
+    #abb4ff,
+    #8b90e9
+  );
+}
+
+.hero .title {
+  margin: 0px 208px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.badge {
+  background-color: #eef2ff;
+  padding: 6px 12px;
+  border-radius: 1234px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.badge p {
+  color: #4f46e5;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.hero .title h1 {
+  font-size: 60px;
+  font-weight: 800;
+  text-align: center;
+  margin: 21px 0px;
+}
+.hero .title p {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: #475569;
+  /* margin-bottom: 48px; */
+}
+
+.hero-btn {
+  margin-top: 48px;
+}
+
+.hero-img {
+  margin-top: 64px;
+  position: relative;
+}
+
+.hero-img .desktop {
+  position: relative;
+  right: -40px;
+  filter:
+  drop-shadow(0px 550px 154px rgba(30, 41, 59, 0.00))
+  drop-shadow(0px 352px 141px rgba(30, 41, 59, 0.01))
+  drop-shadow(0px 198px 119px rgba(30, 41, 59, 0.05))
+  drop-shadow(0px 88px 88px rgba(30, 41, 59, 0.09))
+  drop-shadow(0px 22px 48px rgba(30, 41, 59, 0.10));
+
+}
+.hero-img .phone {
+  position: relative;
+  right: 40px;
+  top: 60px;
+  filter:
+  drop-shadow(0px 322px 90px rgba(30, 41, 59, 0.00))
+  drop-shadow(0px 206px 82px rgba(30, 41, 59, 0.01))
+  drop-shadow(0px 116px 69px rgba(30, 41, 59, 0.05))
+  drop-shadow(0px 51px 51px rgba(30, 41, 59, 0.09))
+  drop-shadow(0px 13px 28px rgba(30, 41, 59, 0.10));
 }
