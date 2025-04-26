@@ -390,3 +390,38 @@ body {
   height: auto;
   flex-direction: column;
 }
+
+.address{
+  padding: 64px 112px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.address-content{
+  display: flex;
+  /* justify-content: space-between; */
+  width: 100%;
+  /* align-items: center; */
+  gap: 32px;
+}
+
+.address-card{
+  border-radius: 24px;
+  border: 1px solid#E2E8F0;
+  width: 100%;
+  padding: 24px;
+}
+
+.address-card img{
+  margin-bottom: 24px;
+}
+
+.address-card h3{
+  margin-bottom: 8px;
+}
+
+.address-card .desc{
+  color: #1E293B;
+}
