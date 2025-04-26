@@ -399,6 +399,16 @@ body {
   gap: 24px;
 }
 
+.address h1{
+  font-weight: 800px;
+  font-size: 36px;
+}
+
+.address p{
+  font-size: 18px;
+  color: #475569;
+}
+
 .address-content{
   display: flex;
   /* justify-content: space-between; */
@@ -424,4 +434,63 @@ body {
 
 .address-card .desc{
   color: #1E293B;
+}
+
+.faq{
+  padding: 96px 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq h1{
+  font-size: 36px;
+  font-weight: 800;
+  margin: 24px 0;
+}
+
+.faq p{
+  font-size: 18px;
+  color: #475569;
+  text-align: center;
+}
+
+.faq-content{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 65px;
+}
+
+.faq-accordion{
+  display: flex; 
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between; 
+  align-items: start;
+  padding: 16px;
+  border-bottom: 1px solid #CBD5E1;
+  cursor: pointer;
+  user-select: none;
+}
+
+.faq-action{
+  display: flex; 
+  width: 100%;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.faq-action div{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.faq-accordion p{
+  text-align: start;
+  margin-top: 16px;
 }
