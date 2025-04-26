@@ -494,3 +494,64 @@ body {
   text-align: start;
   margin-top: 16px;
 }
+
+.app{
+  padding: 64px 112px;
+  background-color: #eef2ff;
+  display: flex;
+  align-items: center;
+  gap: 96px;
+  height: 653px;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.app .text h1{
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.app .text p{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 160%;
+  margin-bottom: 48px;
+}
+
+.app .text button{
+  padding: 12px 20px;
+  border-radius: 1234px;
+  background: none;
+  font-weight: 700;
+}
+
+.app .text .learn-more-btn{
+  color: #4f46e5;
+  margin-right: 16px;
+  border: 1px solid #4f46e5;
+}
+
+.app .text .get-started-btn{
+  color: white;
+  background-color: #4f46e5;
+  border: none;
+}
+
+.app .img{
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.app .img .app-img-1{
+  position: absolute;
+  top: -290px;
+  right: 70px;
+}
+
+.app .img .app-img-2{
+  position: absolute;
+  bottom: -720px;
+  right: -310px;
+}
