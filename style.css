@@ -653,6 +653,7 @@ footer{
 
   .hero{
     padding: 64px 16px;
+    height: 836px;
   }
 
   .hero .title h1{
@@ -661,6 +662,10 @@ footer{
 
   .hero .title{
     margin: 0;
+  }
+
+  .hero-img{
+    
   }
 
   .hero-img .desktop{
@@ -770,6 +775,7 @@ footer{
     padding: 64px 16px;
     height: auto;
     gap: 10px;
+    height: 1050px;
   }
 
   .app p{
