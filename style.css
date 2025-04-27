@@ -361,6 +361,16 @@ li:hover a{
   font-weight: 700;
 }
 
+.title{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.identity .title .badge p{
+  color: #4f46e5;
+}
+
 .identity-list p {
   color: #475569;
 }
@@ -449,6 +459,10 @@ li:hover a{
   color: #475569;
 }
 
+.address .badge p{
+  color: #4f46e5;
+}
+
 .address-content{
   display: flex;
   /* justify-content: space-between; */
@@ -495,6 +509,10 @@ li:hover a{
   font-size: 18px;
   color: #475569;
   text-align: center;
+}
+
+.faq .badge p{
+  color: #4f46e5;
 }
 
 .faq-content{
