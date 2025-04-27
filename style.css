@@ -66,6 +66,10 @@ li:hover a{
   cursor: pointer;
 }
 
+/* .cross-icon{
+  display: none;
+} */
+
 .signup-btn {
   /* font-weight: bold; */
   background-color: white;
@@ -83,6 +87,13 @@ li:hover a{
 .menu-btn{
   display: none;
 }
+
+.navbar .mobile-menu{
+  display: none;
+}
+
+
+
 
 .hero {
   padding: 96px 112px;
@@ -643,7 +654,11 @@ footer{
   .navbar{
     padding: 16px;
   }
-  .navbar button, a{
+  .navbar .nav-buttons button{
+    display: none;
+  }
+
+  .navbar .nav-links a{
     display: none;
   }
 
@@ -664,8 +679,28 @@ footer{
     margin: 0;
   }
 
-  .hero-img{
-    
+  .cross-icon{
+    width: 30px;
+    margin-bottom: 30px;
+  }
+
+  #mobile-menu{
+    /* display: block; */
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    border: 1px solid red;
+    background-color: white;
+    padding: 20px;
+  }
+
+  .navbar #mobile-menu ul{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-bottom: 20px;
   }
 
   .hero-img .desktop{

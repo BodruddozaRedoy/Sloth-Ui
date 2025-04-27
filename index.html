@@ -15,17 +15,41 @@
           <img src="./assets/images/Logo.png" alt="" />
         </div>
         <!-- nav links  -->
-        <ul>
+        <ul class="nav-links">
           <li><a href="#features">Features</a></li>
           <li><a href="#achievements">Achievements</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
         <!-- nav buttons  -->
-        <div>
+        <div class="nav-buttons">
           <button class="signup-btn">Sign Up</button>
           <button class="login-btn">Log In</button>
-          <img class="menu-btn" src="./assets/images/menu-icon.png" alt="">
+          <img
+            onclick="handleMenu()"
+            class="menu-btn"
+            src="./assets/images/menu-icon.png"
+            alt=""
+          />
+        </div>
+
+        <!-- mobile menu  -->
+        <div id="mobile-menu" class="mobile-menu">
+          <img
+            onclick="handleMenuClose()"
+            class="cross-icon"
+            src="https://img.icons8.com/?size=100&id=79023&format=png&color=000000"
+            alt=""
+          />
+          <!-- nav links  -->
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+          <button class="signup-btn">Sign Up</button>
+          <button class="login-btn">Log In</button>
         </div>
       </nav>
 
@@ -437,7 +461,7 @@
       </section>
 
       <!-- address section  -->
-      <secion  class="address">
+      <secion class="address">
         <!-- title  -->
         <div class="badge">
           <p>Visit Us Anytime</p>
@@ -646,7 +670,7 @@
             <li>Submit Feedback</li>
             <li>Help Ticket</li>
             <li>Call Center</li>
-          </ul> 
+          </ul>
         </div>
         <!-- Legal  -->
         <div class="footer-links">
@@ -676,11 +700,21 @@
 
       <!-- bottom footer  -->
       <div class="bottom-footer">
-        <img  id="scroll-btn" src="./assets/images/Logo.png" alt="" />
-        <img onclick="scrollToTop()" class="scroll-btn" src="./assets/images/scroll-btn.png" alt="">
+        <img id="scroll-btn" src="./assets/images/Logo.png" alt="" />
+        <img
+          onclick="scrollToTop()"
+          class="scroll-btn"
+          src="./assets/images/scroll-btn.png"
+          alt=""
+        />
         <p>Copyright 2028 slothUI, All Rights Reserved.</p>
-          <img onclick="scrollToTop()" id="scroll-btn" class="scroll-btn-mobile" src="./assets/images/scroll-btn.png" alt="">
-        </>
+        <img
+          onclick="scrollToTop()"
+          id="scroll-btn"
+          class="scroll-btn-mobile"
+          src="./assets/images/scroll-btn.png"
+          alt=""
+        />
       </div>
     </footer>
 
