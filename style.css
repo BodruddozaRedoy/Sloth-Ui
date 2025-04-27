@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,12 +12,30 @@ body {
   font-size: 16px;
 }
 
+li{
+  cursor: pointer;
+}
+
+li:hover{
+  color: #4f46e5;
+  font-weight: 700;
+}
+
+li:hover a{
+  color: #4f46e5;
+  font-weight: 700;
+}
+
 .navbar {
   padding: 16px 112px;
+  top: 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: white;
+  position: fixed;
+  width: 100vw;
+  z-index: 999999;
 }
 
 .img-container {
@@ -44,10 +63,11 @@ body {
   padding: 12px 20px;
   border-radius: 1234px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .signup-btn {
-  font-weight: bold;
+  /* font-weight: bold; */
   background-color: white;
   border: 1px solid #cbd5e1;
   margin-right: 8px;
@@ -57,10 +77,16 @@ body {
   background-color: #4f46e5;
   border: none;
   color: white;
+  border: 1px solid #4f46e5;
+}
+
+.menu-btn{
+  display: none;
 }
 
 .hero {
   padding: 96px 112px;
+  margin-top: 80px;
   /* width: 100%; */
   display: flex;
   flex-direction: column;
@@ -118,6 +144,8 @@ body {
 
 .hero-btn {
   margin-top: 48px;
+  display: flex;
+  gap: 8px;
 }
 
 .hero-img {
@@ -177,10 +205,10 @@ body {
 .main-features .features {
   /* display: flex; */
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   align-items: start;
   justify-content: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 32px;
   margin-top: 64px;
 }
@@ -212,6 +240,7 @@ body {
   font-size: 36px;
   font-weight: 800;
   margin: 24px 0;
+  text-align: center;
 }
 
 .achievments .desc {
@@ -448,6 +477,7 @@ body {
   font-size: 36px;
   font-weight: 800;
   margin: 24px 0;
+  text-align: center;
 }
 
 .faq p{
@@ -592,4 +622,197 @@ footer{
   color: #94A3B8;
   font-size: 14px;
   font-weight: 600;
+}
+
+
+
+
+/* Responsive  */
+
+/* Mobile  */
+@media (max-width: 480px) {
+  .navbar{
+    padding: 16px;
+  }
+  .navbar button, ul, li{
+    display: none;
+  }
+
+  .navbar img{
+    display: flex;
+  }
+
+  .hero{
+    padding: 64px 16px;
+  }
+
+  .hero .title h1{
+    font-size: 36px;
+  }
+
+  .hero .title{
+    margin: 0;
+  }
+
+  .hero-img .desktop{
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .hero-img .phone{
+    right: -220px;
+    top: -170px;
+    width: 30%;
+  }
+
+  .social-proof{
+    padding: 64px 16px;
+    gap: 32px;
+  }
+
+  .social-proof img{
+    width: 96px;
+  }
+
+  .main-features{
+    padding: 64px 16px;
+  }
+
+  .main-features .features{
+    grid-template-columns: 1fr;
+  }
+
+  .main-features h1{
+    font-size: 30px;
+  }
+
+  .achievments{
+    padding: 64px 16px;
+  }
+
+  .achievments h1{
+    font-size: 30px;
+
+  }
+
+  .stat{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .stat .divider{
+    width: 100%;
+    height: 1px;
+    margin: 32px 0;
+  }
+
+  .identity{
+    padding: 64px 16px;
+  }
+
+  .identity-content{
+    flex-direction: column;
+  }
+
+  .identity-list{
+    padding-right: 0px;
+  }
+
+  .identity-content img{
+    width: 100%;
+  }
+
+  .testimonial-content{
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials{
+    padding: 64px 16px;
+  }
+
+  .testimonials h1{
+    font-size: 30px;
+  }
+
+  .address{
+    padding: 64px 16px;
+  }
+
+  .address h1{
+    font-size: 30px;
+  }
+
+  .address-content{
+    flex-direction: column;
+  }
+
+  .faq{
+    padding: 64px 16px;
+  }
+
+  .faq h1{
+    font-size: 30px;
+    
+  }
+
+  .app{
+    flex-direction: column;
+    padding: 64px 16px;
+    height: auto;
+    gap: 10px;
+  }
+
+  .app p{
+    color: #475569;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .app .text button{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .app .text .learn-more-btn{
+    margin-bottom: 12px;
+  }
+
+  .app .img{
+    width: 100%;
+  }
+
+  .app img{
+    width: 80%;
+  }
+
+  .app .img .app-img-1{
+    /* width: 162px; */
+    position: relative;
+    top: 150px;
+    left: 40;
+  }
+  .app .img .app-img-2{
+    position: relative;
+    top: 20px;
+    right: 170px;
+  }
+
+  footer{
+    padding: 64px 16px;
+  }
+
+  .footer-content{
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links ul{
+
+  }
+
+  .bottom-footer{
+    flex-direction: column;
+    padding-bottom: 32px;
+  }
 }
