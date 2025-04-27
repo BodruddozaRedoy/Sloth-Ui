@@ -609,6 +609,7 @@ footer{
 
 .footer-links li{
   list-style: none;
+  color: #475569;
 }
 
 .bottom-footer{
@@ -624,6 +625,14 @@ footer{
   font-weight: 600;
 }
 
+.scroll-btn{
+  cursor: pointer;
+}
+
+.scroll-btn-mobile{
+  display: none;
+}
+
 
 
 
@@ -634,7 +643,7 @@ footer{
   .navbar{
     padding: 16px;
   }
-  .navbar button, ul, li{
+  .navbar button, a{
     display: none;
   }
 
@@ -791,7 +800,7 @@ footer{
     /* width: 162px; */
     position: relative;
     top: 150px;
-    left: 40;
+    left: -65px;
   }
   .app .img .app-img-2{
     position: relative;
@@ -801,18 +810,31 @@ footer{
 
   footer{
     padding: 64px 16px;
+    height: auto;
   }
 
   .footer-content{
     grid-template-columns: 1fr;
+    gap: 32px;
   }
 
   .footer-links ul{
-
+    height: auto;
+    display: block;
+    gap: 12px;
   }
 
   .bottom-footer{
     flex-direction: column;
     padding-bottom: 32px;
+  }
+
+  .scroll-btn{
+    display: none;
+  }
+
+  .scroll-btn-mobile{
+    display: flex;
+    margin-top: 32px;
   }
 }
